@@ -8,12 +8,12 @@ class MessagesController < ApplicationController
 
   def new
   end
-
+  
   def create
     @message = Message.new
     @message.title = params[:message][:title]
     @message.content = params[:message][:content]
     @message.save
-    redirect_to '/messages/index'
+    redirect_to '/tweets/index'
   end
 end

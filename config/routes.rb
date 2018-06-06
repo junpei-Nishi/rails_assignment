@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  get 'message/index'
-  get 'message/show'
-  get 'message/new'
-  post 'message' => 'message#create'
+  get 'messages/index'
+  get 'messages/show'
+  get 'messages/new'
+  post 'messages' => 'message#create'
   get 'tweets/index'
   get 'tweets/show'
   get 'tweets/new'
