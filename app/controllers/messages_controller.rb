@@ -1,4 +1,4 @@
-class MessageController < ApplicationController
+class MessagesController < ApplicationController
   def index
     @message = Message.all
   end
@@ -14,6 +14,6 @@ class MessageController < ApplicationController
     @message.title = params[:message][:title]
     @message.content = params[:message][:content]
     @message.save
-    redirect_to '/tweets/index'
+    redirect_to '/messages/index'
   end
-end
+end 
